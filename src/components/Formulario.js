@@ -6,7 +6,7 @@ import Error from './Error';
 const Formulario = ({guardarGasto, guardarCrearGasto}) => {
 
     const [nombre, guardarNombre] = useState('');
-    const [cantidad, guardarCantidad] = useState('');
+    const [cantidad, guardarCantidad] = useState(0);
     const [ error, guardarError] = useState(false);
 
     
@@ -34,7 +34,7 @@ const Formulario = ({guardarGasto, guardarCrearGasto}) => {
 
         // resetear el form
         guardarNombre('');
-        guardarCantidad('');
+        guardarCantidad(0);
     }
 
     return ( 
